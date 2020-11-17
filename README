@@ -1,0 +1,20 @@
+Development Installation:
+=========================
+
+-download xataface zip file
+-extract in a directory
+-copy application directory files from a full installation on oxywn, e.g. conf.ini, tables/, template_c
+-note: template_c files can be deleted whenever, they are auto-created
+
+-requires PHP and MySQL
+
+## Xataface Php7.2 Mysqli on Ubuntu (PHP >5 requires Mysqli!)
+## Php7 has built-in server for development
+
+sudo apt install php-7.2 php-7.2-mysql
+
+##then start built-in server in the application directory
+php -S localhost:8085 -t /home/dorothea/Programming/xatasstemdb
+
+(!configure driver=mysqli in conf.ini of xatasstemdb!)
+

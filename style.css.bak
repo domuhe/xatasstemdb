@@ -1,0 +1,100 @@
+:root {
+  --main-border-color: #6699cc;
+  --main-background-color: #ecf2f9;
+}
+
+// customising logo in top left corner
+#xf-logo {
+  background-image: url(images/superstemlogo.png);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 39px;
+  padding: 0;
+  margin: 0;
+ }
+ 
+// general background colour
+body {
+background-color: blue;
+}
+
+//reduces font size in edit form title from 124% to 120%
+h3 {
+    font-size: 120%;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+// background of selected in the left pane
+#table_quicklinks li.selected a {
+    background-color: var(--main-border-color);
+    font-weight: bold;
+}
+
+//border around the view, details views
+div.mainArea {
+    border: 2px solid var(--main-border-color);
+    border-radius: 2px;
+}
+
+#xf-details {
+	background-colour: grey;
+
+}
+
+/*
+ trying to reduce row height in list view
+.row-actions-cell {
+	padding: 0em 0em 0em 0em !important;
+}
+
+*/
+.listing td, .stx table td {
+    border-right: 1px solid transparent;
+    /* top right bottom left */
+    padding: 0em 1em 0em 1em;
+    height: 5px;
+    text-align: left;
+    line-height: 0em;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.listing, .stx table {
+    border-collapse: collapse;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font-size: 100%;
+    margin: 0em 0em 0em 0em;
+}
+
+// do not show row actions cells (2nd default column)
+.row-actions-header {
+        display: none;
+}
+
+.row-actions-cell {
+        display: none;
+        padding: 0px 0px 0px 0px !important;
+        background-color: red
+}
+
+/*
+#result_list, #relatedList {
+    margin: 0px 0px 0px 0px !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    clear: both;
+}
+
+
+
+*/
+
+
+
+
+

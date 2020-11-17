@@ -1,0 +1,156 @@
+/* main variables */
+:root {
+  --main-border-color: #6699cc;
+  --main-background-color: #ecf2f9;
+  --main-font-size: 12px;
+  --main-line-height: 17px;
+  --hthree-lineeheight: 35px;
+}
+
+/* customising logo in top left corner */
+#xf-logo {
+  background-image: url(images/superstemlogo.png);
+  background-repeat: no-repeat;
+  width: 152px;
+  height: 39px;
+  padding: 0;
+  margin: 0;
+ }
+ 
+/* set general background colour */
+body {
+	background-color: var(--main-background-color);
+	font-size: var(--main-font-size);
+	line-height: var(--main-line-height) ;
+}
+
+/* set background of selected item in the left pane */
+#table_quicklinks li.selected a {
+    background-color: var(--main-border-color);
+    font-weight: bold;
+}
+
+/* border around the list and details views - same colour as selected item above*/
+div.mainArea {
+    border: 2px solid var(--main-border-color);
+    border-radius: 2px;
+}
+
+/*** DETAIL VIEW RELATED ***/
+
+/* following two reduce height of title in detail view by reducing font-size for h3 and padding */
+.dataface-sections-top h3 {
+    padding: 0px;
+    font-size: 100%;
+    color: blue;
+}
+
+div.dataface-sections-top {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em;
+}
+
+/* background in detail view title bar "Details" */
+h3.Dataface_collapsible_sidebar {
+    background-color: #cccccc !important;
+}
+
+/* button bar in detail and edit view */
+div.xf-button-bar{
+	background-color: #f7f7f7;
+}
+
+
+/*** EDIT VIEW RELATED ***/
+
+/* edit view, h3 inherits main body line-height, as we have reduced this for general purposes, add padding */
+h3 {
+	padding: 0.8em 0em 0.5em 0em;
+}
+
+/* background in edit view */
+div.documentContent {
+	background-color: #eeeeee;
+/*	padding: 10px 30px 10px 30px;
+	background-clip: content-box;*/
+}
+
+/*** LIST VIEW RELATED ***/
+
+/* do not display row-actions-cell - we are not needing it yet */
+.row-actions-cell {
+/*	display: none; */
+	padding: 0em 0em 0em 0em !important;
+}
+
+/*.row-actions-header {
+        display: none;
+}*/
+
+/* text area font size in edit view */
+textarea {
+    font: 100% ;
+}
+
+/*** trying to reduce row height in list view ***/
+.listing tr {
+	font-size: 10px !important;
+}
+
+.listing td, .stx table td {
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height) !important;   /* line-height seems not to affect anything */
+    border-right: 1px solid transparent;
+    /* top right bottom left */
+    padding: 0em 1em 0em 1em;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.listing, .stx table {
+    border-collapse: collapse;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    margin: 0em 0em 0em 0em;
+}
+
+/* this is the main culprit for line height in list view! */
+input:not([type="submit"]) {
+    font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+    visibility: visible;
+    border: 1px solid #8cacbb;
+    color: Black;
+    background-color: white;
+    vertical-align: middle;
+    font-size: var(--main-font-size);
+    height: var(--main-line-height);
+}
+
+.input rowSelectorCheckbox {
+	font-size: 100%;
+}
+
+#result_list {
+	padding: 0px;
+	line-height:12px;
+    margin: 0px 0px 0px 0px !important;
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    clear: both;
+}
+
+/*** edit view fields ***/
+
+/* remove too much whitespace around input fields in edit view */
+.field {
+	margin: 0 1em 0 0;
+}
+
+
+
+

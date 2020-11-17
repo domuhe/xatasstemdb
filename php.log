@@ -1,0 +1,220 @@
+[11-Feb-2020 09:25:13 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left jo' at line 1
+[11-Feb-2020 09:25:13 UTC] 438fc2a6-76ed-4250-bec3-11c311afb123>
+[11-Feb-2020 09:25:13 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left jo' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:25:13 UTC] <438fc2a6-76ed-4250-bec3-11c311afb123
+[11-Feb-2020 09:25:13 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:26:19 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left jo' at line 1
+[11-Feb-2020 09:26:19 UTC] 6edcd38f-0f0c-4248-8e84-f372ff12c5b8>
+[11-Feb-2020 09:26:19 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left jo' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep,/,i.InstituteName) as groupdepinst from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:26:19 UTC] <6edcd38f-0f0c-4248-8e84-f372ff12c5b8
+[11-Feb-2020 09:26:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1658
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  ucfirst() expects parameter 1 to be string, array given in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 2044
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1659
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1660
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1661
+[11-Feb-2020 09:27:24 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) from ResearchGroups r left join LnkUsersResGr' at line 1
+[11-Feb-2020 09:27:24 UTC] d2dfb3ac-bcc9-4714-889c-7a822b89df74>
+[11-Feb-2020 09:27:24 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep,/,i.InstituteName) from ResearchGroups r left join LnkUsersResGr' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep,/,i.InstituteName) from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:27:24 UTC] <d2dfb3ac-bcc9-4714-889c-7a822b89df74
+[11-Feb-2020 09:27:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1658
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  ucfirst() expects parameter 1 to be string, array given in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 2044
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1659
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1660
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1661
+[11-Feb-2020 09:28:05 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1
+[11-Feb-2020 09:28:05 UTC] 8ea154fd-df99-434b-b4b1-8cedf3dcc4d4>
+[11-Feb-2020 09:28:05 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:28:05 UTC] <8ea154fd-df99-434b-b4b1-8cedf3dcc4d4
+[11-Feb-2020 09:28:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1658
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  ucfirst() expects parameter 1 to be string, array given in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 2044
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1659
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1660
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1661
+[11-Feb-2020 09:28:06 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1
+[11-Feb-2020 09:28:06 UTC] 729e2509-5407-4420-9968-fff7c2e681f2>
+[11-Feb-2020 09:28:06 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:28:06 UTC] <729e2509-5407-4420-9968-fff7c2e681f2
+[11-Feb-2020 09:28:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1658
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  ucfirst() expects parameter 1 to be string, array given in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 2044
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1659
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  Illegal offset type in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1660
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  Illegal offset type in isset or empty in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php on line 1661
+[11-Feb-2020 09:28:25 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1
+[11-Feb-2020 09:28:25 UTC] 9cc178f0-2af5-4000-8cad-e975fbf8c45a>
+[11-Feb-2020 09:28:25 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResG' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep) from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:28:25 UTC] <9cc178f0-2af5-4000-8cad-e975fbf8c45a
+[11-Feb-2020 09:28:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:28:54 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) as resdepinst from ResearchGroups r left join LnkUsersResGroups' at line 1
+[11-Feb-2020 09:28:54 UTC] ceb06e67-7ba8-4a32-97cf-4b5fd56d1b2b>
+[11-Feb-2020 09:28:54 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/,r.ResGroupDep) as resdepinst from ResearchGroups r left join LnkUsersResGroups' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/,r.ResGroupDep) as resdepinst from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:28:54 UTC] <ceb06e67-7ba8-4a32-97cf-4b5fd56d1b2b
+[11-Feb-2020 09:28:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:35:17 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idRes' at line 1
+[11-Feb-2020 09:35:17 UTC] 1a3489f1-f3c5-40e6-92e1-f5c6b2a99ac5>
+[11-Feb-2020 09:35:17 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idRes' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName, r.ResGroupDep,/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:35:17 UTC] <1a3489f1-f3c5-40e6-92e1-f5c6b2a99ac5
+[11-Feb-2020 09:35:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:35:20 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idRes' at line 1
+[11-Feb-2020 09:35:20 UTC] 10b63e0a-4cb6-4d16-8e10-f47eff26d2fe>
+[11-Feb-2020 09:35:20 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idRes' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName, r.ResGroupDep,/) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:35:20 UTC] <10b63e0a-4cb6-4d16-8e10-f47eff26d2fe
+[11-Feb-2020 09:35:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521
+[11-Feb-2020 09:35:46 UTC] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/, r.ResGroupDep) as resdepinst  from ResearchGroups r left join LnkUsersResGrou' at line 1
+[11-Feb-2020 09:35:46 UTC] c69f39b1-2977-4df9-a5a4-ce919fc12ab2>
+[11-Feb-2020 09:35:46 UTC] Exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '/, r.ResGroupDep) as resdepinst  from ResearchGroups r left join LnkUsersResGrou' at line 1SELECT COUNT(*) as num FROM (Select l.*, r.ResGroupDep, i.InstituteName, concat(r.ResGroupName,/, r.ResGroupDep) as resdepinst  from ResearchGroups r left join LnkUsersResGroups l on l.idResGroup=r.idResGroup left join Institutes i on r.ResGroupInst=i.idInstitute) as `LnkUsersResGroups` in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php:134
+Stack trace:
+#0 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/QueryTool.php(651): Dataface_QueryTool->Dataface_QueryTool('LnkUsersResGrou...', Object(mysqli), Array)
+#1 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1310): Dataface_QueryTool::loadResult('LnkUsersResGrou...', Object(mysqli), Array)
+#2 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(1383): Dataface_Application->getResultSet()
+#3 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3146): Dataface_Application->getRecord()
+#4 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(3175): Dataface_Application->getPermissions()
+#5 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(238): Dataface_Application->checkPermission('list')
+#6 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Table.php(5833): Dataface_ActionTool->getActions(Array)
+#7 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(82): Dataface_Table->getActions(Array)
+#8 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/ActionTool.php(98): Dataface_ActionTool->_loadTableActions('LnkUsersResGrou...')
+#9 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2317): Dataface_ActionTool->getAction(Array)
+#10 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2655): Dataface_Application->handleRequest(false)
+#11 /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php(2495): Dataface_Application->_display(false, false)
+#12 /home/dorothea/Programming/xatasstemdb/index.php(6): Dataface_Application->display()
+#13 {main}
+[11-Feb-2020 09:35:46 UTC] <c69f39b1-2977-4df9-a5a4-ce919fc12ab2
+[11-Feb-2020 09:35:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/dorothea/Programming/xatasstemdb/tables/LnkUsersResGroups/LnkUsersResGroups.php:15) in /home/dorothea/Programming/xatasstemdb/xataface/Dataface/Application.php on line 2521

@@ -7,7 +7,7 @@ class tables_LnkUsersResGroups{
 	    return array(0=>'No', 1=>'Yes');
 	}	
 	function getTitle(&$record){
-		return '['.$record->val('idUserGroup').']'.$record->val('UserName');
+		return '['.$record->val('idUserGroup').'] '.$record->val('UserName');
 	}
 	
 

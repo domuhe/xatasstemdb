@@ -6,7 +6,9 @@ class tables_LnkUsersResGroups{
 	function valuelist__IsStudent() {
 	    return array(0=>'No', 1=>'Yes');
 	}	
-
+	function getTitle(&$record){
+		return '['.$record->val('idUserGroup').']'.$record->val('UserName');
+	}
 	
 
 }
